@@ -38,7 +38,9 @@
     { label: "名医", value: "名医" },
     { label: "东北王", value: "东北王" },
     { label: "西南王", value: "西南王" },
-    { label: "十三行", value: "十三行" }
+    { label: "十三行", value: "十三行" },
+    { label: "文物古董", value: "博物馆" },
+    { label: "海外密档", value: "档案馆" }
   ];
 
   const EDGE_TYPES = {
@@ -622,7 +624,7 @@
       .map(
         (c) => `
       <button type="button" class="hot-chip ${state.activeArtifactCategory === c ? "active" : ""}" data-cat="${c}">
-        ${c === "ALL" ? "全部器物（12）" : c}
+        ${c === "ALL" ? `全部器物（${DATA.artifacts.length}）` : c}
       </button>
     `
       )

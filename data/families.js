@@ -158,7 +158,7 @@ const HISTORICAL_DATA = {
         { dest: "出海欧美", desc: "张学良 1990 年代定居夏威夷；子女张闾瑛、张闾琳等定居美国。" }
       ],
       linkedArtifactIds: ["A12"],
-      sources: ["哥伦比亚大学“毅荻书斋”《张学良口述历史》", "辽宁省档案馆奉系军政档案", "《张学思传》"],
+      sources: ["哥伦比亚大学“毅荻书斋”《张学良口述历史》", "辽宁省档案馆奉系军政档案", "英国国家档案馆 FO 371 与日本亚洲历史资料中心（JACAR）奉天卷", "《张学思传》"],
       debunkNote: "坊间盛传“大帅府地底黄金秘库”属夸大附会；档案实证张氏主力资产为边业银行准备金，大部在九一八事变遭日军劫掠，余部随迁平津并转海外信托。"
     },
     {
@@ -279,7 +279,7 @@ const HISTORICAL_DATA = {
         { dest: "赴台湾", desc: "部分北洋旧部及袁氏支脉随军政系统迁台。" },
         { dest: "出海欧美", desc: "袁家骝（核物理学家，吴健雄丈夫）等在美科学界扬名。" }
       ],
-      linkedArtifactIds: ["A11"],
+      linkedArtifactIds: ["A11", "A13"],
       sources: ["天津市档案馆五大道租界房产档", "《周学熙集》", "周一良《毕竟是书生》"],
       debunkNote: ""
     },
@@ -339,7 +339,7 @@ const HISTORICAL_DATA = {
         { dest: "留大陆", desc: "孔府建筑、大部分档案及留守族人（如孔令朋等）留大陆。" },
         { dest: "赴台湾", desc: "七十七代衍圣公孔德成赴台主祭孔典并任台大教授、“考试院”院长。" }
       ],
-      linkedArtifactIds: ["A03", "A09"],
+      linkedArtifactIds: ["A03", "A09", "A15"],
       sources: ["《孔府档案选编》", "曲阜市文物档案馆", "台湾中研院《孔德成先生纪念文集》"],
       debunkNote: ""
     },
@@ -374,8 +374,39 @@ const HISTORICAL_DATA = {
       debunkNote: ""
     },
     {
-      id: "F09",
+      id: "F35",
       northToSouthOrder: 9,
+      regionId: "R2",
+      name: "京师端方与清室金石大维德瓷器流散脉",
+      surnameTags: ["端方", "福开森", "大维德爵士", "故宫南迁"],
+      location: "北京 · 陕西宝鸡 · 纽约大都会 · 伦敦大英",
+      mapPos: { x: 400, y: 192 },
+      badge: "文物外流 · 大都会/大英",
+      pillars: ["政权", "儒", "商金融"],
+      categories: ["官僚买办", "文教科研"],
+      darkMechanisms: ["汉学家中间人跨海售宝", "清室抵押瓷器入英伦基金会"],
+      evidenceLevel: "档案确证",
+      summary: "晚清金石名臣端方（满洲正白旗）1901 年收得西周“柉禁十三器”，1911 遇害后家族于 1924 年经福开森售予纽约大都会艺术博物馆；同期大维德爵士自没落清室与北京银行抵押购入 1,700 件御瓷入大英博物馆 95 室，与 1933 故宫南迁构成近代国宝分流双极。",
+      openLine: "端方历任陕西巡抚、两江总督及直隶总督，藏金石书画甲天下；大维德爵士建立伦敦大英博物馆 95 号中国陶瓷专室；1933 年 2 月故宫近两万箱文物南迁护宝。",
+      darkLine: "辛亥后清廷亲贵与落魄大臣纷纷将传世青铜、御瓷抵押给北京中外银行或经福开森、通运公司等西方代理暗中变现渡日；英国《大维德基金会档》与纽约《大都会亚洲部购藏档》精确保留了这批国宝跨越太平洋与大西洋的价格、经手人与流转轨迹。",
+      timeline: [
+        { epochId: "E1", period: "乾嘉内府", event: "乾隆朝大兴内府古物鉴藏，形成《石渠宝笈》《西清古鉴》等宫廷与旗籍私藏脉络。" },
+        { epochId: "E2", period: "晚清聚宝", event: "1901 端方在宝鸡收西周“柉禁十三器”；1911 在四川资州保路风潮被杀。" },
+        { epochId: "E3", period: "跨海流散", event: "1924 福开森售柉禁入大都会；大维德搜购清室抵押 1,700 件官窑；1933 故宫近两万箱国宝南迁西迁。" },
+        { epochId: "E4", period: "双极陈列", event: "柉禁驻纽约大都会、大维德藏瓷入大英 95 室；故宫南迁文物分置台北故宫、南京博物院与北京故宫。" }
+      ],
+      branches1949: [
+        { dest: "留大陆", desc: "北京故宫与南京博物院留存大量端方余藏、故宫回流及清室文物。" },
+        { dest: "赴台湾", desc: "1948—1949 年部分故宫南迁精华运抵台北外双溪故宫博物院。" },
+        { dest: "出海欧美", desc: "端方柉禁、齐侯四器与大维德瓷器等永久入藏美英顶级博物馆。" }
+      ],
+      linkedArtifactIds: ["A13", "A15"],
+      sources: ["纽约大都会艺术博物馆（The Met）亚洲部藏品档", "伦敦大英博物馆《大维德基金会档》", "《故宫文物南迁档案》"],
+      debunkNote: ""
+    },
+    {
+      id: "F09",
+      northToSouthOrder: 10,
       regionId: "R3",
       name: "合肥李氏（李鸿章家族）",
       surnameTags: ["李鸿章", "李经方", "李经迈", "张爱玲"],
@@ -406,7 +437,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F10",
-      northToSouthOrder: 10,
+      northToSouthOrder: 11,
       regionId: "R3",
       name: "湘乡曾氏（曾国藩家族）",
       surnameTags: ["曾国藩", "曾纪泽", "聂云台", "曾昭抡"],
@@ -437,7 +468,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F11",
-      northToSouthOrder: 11,
+      northToSouthOrder: 12,
       regionId: "R3",
       name: "金陵刻经处与近代佛学义学脉",
       surnameTags: ["杨文会", "欧阳竟无", "熊十力", "赵朴初"],
@@ -467,7 +498,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F12",
-      northToSouthOrder: 12,
+      northToSouthOrder: 13,
       regionId: "R3",
       name: "【江西】义宁（修水）陈氏",
       surnameTags: ["陈宝箴", "陈三立", "陈寅恪", "陈封怀"],
@@ -497,7 +528,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F13",
-      northToSouthOrder: 13,
+      northToSouthOrder: 14,
       regionId: "R3",
       name: "【江西】贵溪龙虎山·嗣汉天师府张氏",
       surnameTags: ["张恩溥", "张允贤", "正一真人", "阳平治都功印"],
@@ -527,7 +558,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F14",
-      northToSouthOrder: 14,
+      northToSouthOrder: 15,
       regionId: "R3",
       name: "【江西】云居山/庐山禅净祖庭与虚云护法网",
       surnameTags: ["虚云老和尚", "唐继尧", "李济深", "王一亭"],
@@ -557,7 +588,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F15",
-      northToSouthOrder: 15,
+      northToSouthOrder: 16,
       regionId: "R3",
       name: "【江西】江右“万寿宫”商帮与樟树药帮",
       surnameTags: ["许真君万寿宫", "樟树药帮", "文廷式", "珠山八友"],
@@ -587,7 +618,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F16",
-      northToSouthOrder: 16,
+      northToSouthOrder: 17,
       regionId: "R3",
       name: "两淮徽商余脉与绩溪胡适支",
       surnameTags: ["江春", "鲍志道", "胡传", "胡适"],
@@ -618,7 +649,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F17",
-      northToSouthOrder: 17,
+      northToSouthOrder: 18,
       regionId: "R4",
       name: "常州武进盛氏（盛宣怀家族）",
       surnameTags: ["盛康", "盛宣怀", "盛恩颐", "盛爱颐", "盛毓度"],
@@ -644,13 +675,13 @@ const HISTORICAL_DATA = {
         { dest: "出海欧美", desc: "盛毓度长期旅日，另有多位孙辈移居欧美。" }
       ],
       linkedArtifactIds: ["A01", "A10"],
-      sources: ["上海图书馆藏《盛宣怀档案》（178,633件）", "夏东元《盛宣怀年谱长编》", "盛佩玉《盛氏家族》"],
+      sources: ["上海图书馆藏《盛宣怀档案》（178,633件）", "日本亚洲历史资料中心（JACAR）汉冶萍借款档案 & 英国 FO 371 汉口卷", "夏东元《盛宣怀年谱长编》", "盛佩玉《盛氏家族》"],
       debunkNote: "网传盛宣怀与胡雪岩单靠个人暗算倾轧，实属商业戏说；盛宣怀真正倚仗的是李鸿章北洋官僚体系、外资银团信用与租界法权组合拳。"
     },
 
     {
       id: "F18",
-      northToSouthOrder: 18,
+      northToSouthOrder: 19,
       regionId: "R4",
       name: "常州公羊儒脉与陈撄宁/南怀瑾丹道密使脉",
       surnameTags: ["庄存与", "刘逢禄", "马一浮", "陈撄宁", "南怀瑾"],
@@ -681,7 +712,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F19",
-      northToSouthOrder: 19,
+      northToSouthOrder: 20,
       regionId: "R4",
       name: "绩溪—杭州胡氏（胡雪岩与胡庆余堂）",
       surnameTags: ["胡雪岩", "胡光墉", "文煜", "施凤翔"],
@@ -711,7 +742,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F20",
-      northToSouthOrder: 20,
+      northToSouthOrder: 21,
       regionId: "R4",
       name: "吴越钱氏四支矩阵（杭县/无锡/湖州）",
       surnameTags: ["钱学森", "钱永健", "钱穆", "钱伟长", "钱钟书", "钱三强"],
@@ -743,7 +774,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F21",
-      northToSouthOrder: 21,
+      northToSouthOrder: 22,
       regionId: "R4",
       name: "江南王氏诸支（太仓/王一亭/宁波王宽诚）",
       surnameTags: ["王鸣盛", "王国维", "王一亭", "王宽诚"],
@@ -767,13 +798,13 @@ const HISTORICAL_DATA = {
         { dest: "留大陆", desc: "江南王氏文教医药各支安居苏沪浙；王一亭子孙留沪继承海派书画与慈善事业。" },
         { dest: "驻香港", desc: "王宽诚家族立足香港政商高层（全国政协常委），成为内地引资育才桥梁。" }
       ],
-      linkedArtifactIds: ["A01"],
-      sources: ["《王一亭传》", "上海市档案馆上海总商会与同盟会捐款档", "王宽诚教育基金会史料"],
+      linkedArtifactIds: ["A01", "A14"],
+      sources: ["《王一亭传》", "上海市档案馆上海总商会与同盟会捐款档", "日本 JACAR 日清汽船史料", "王宽诚教育基金会史料"],
       debunkNote: ""
     },
     {
       id: "F22",
-      northToSouthOrder: 22,
+      northToSouthOrder: 23,
       regionId: "R4",
       name: "江南名医世家群（吴门/孟河四家/石蔡朱）",
       surnameTags: ["叶天士", "马培之", "丁甘仁", "秦伯未", "石筱山"],
@@ -803,7 +834,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F23",
-      northToSouthOrder: 23,
+      northToSouthOrder: 24,
       regionId: "R4",
       name: "上海佛教居士林与近代释商护法网",
       surnameTags: ["聂云台", "印光大师", "弘一法师", "简玉阶"],
@@ -833,7 +864,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F24",
-      northToSouthOrder: 24,
+      northToSouthOrder: 25,
       regionId: "R4",
       name: "无锡荣氏（荣宗敬/荣德生→荣毅仁）",
       surnameTags: ["荣宗敬", "荣德生", "荣毅仁", "荣智健"],
@@ -865,7 +896,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F25",
-      northToSouthOrder: 25,
+      northToSouthOrder: 26,
       regionId: "R4",
       name: "湖州南浔“四象”（刘/张/庞/顾）",
       surnameTags: ["刘镛", "张颂贤", "张静江", "庞元济", "顾福昌"],
@@ -876,26 +907,26 @@ const HISTORICAL_DATA = {
       categories: ["金融实业", "买办华商"],
       darkMechanisms: ["巴黎通运古董茶叶外贸", "私人巨资直供革命党"],
       evidenceLevel: "档案确证",
-      summary: "清代咸同之际，仅浙江湖州一个南浔镇便凭直供欧美的“辑里湖丝”聚出超越省级财政的白银；其中张颂贤之孙张静江明为巴黎通运公司古董茶叶富商与南京建设委员会长，暗为孙中山最核心早期金主与蒋介石引路人。",
+      summary: "清代咸同之际，仅浙江湖州一个南浔镇便凭直供欧美的“辑里湖丝”聚出超越省级财政的白银；其中张颂贤之孙张静江明为巴黎通运公司古董茶叶富商与建设委员会长，暗携湖州仆童卢芹斋（C.T. Loo）开启百年中西古董贸易网；庞元济“虚斋”书画亦分流于美国佛利尔美术馆与上海博物馆。",
       openLine: "号称“四象八牛七十二金狗”（“象”指白银千万两以上）：刘氏嘉业堂藏书楼、张静江南京建设功绩、庞元济“虚斋”中国近代第一书画鉴藏。",
-      darkLine: "张静江 1902 年赴法开办“通运公司”，借欧洲上流社会中国古董热潮攫取暴利，暗中悉数接济孙中山同盟会与吴稚晖《新世纪》；同时在沪交易所以交易所经纪帮扶早年蒋介石与陈果夫兄弟渡过难关。",
+      darkLine: "张静江 1902 年赴法开办“通运公司”，借欧洲上流社会中国古董热潮攫取暴利，暗中悉数接济孙中山同盟会；其随从卢芹斋自立门户后，于 1914 年前后将盗凿的唐昭陵六骏“飒露紫”“拳毛騧”售往美国宾夕法尼亚大学博物馆；庞元济“虚斋”名画部分亦经通运流入美国佛利尔美术馆。",
       timeline: [
         { epochId: "E1", period: "乾嘉伏脉", event: "太湖东南南浔古镇“辑里湖丝”获清廷织造特供并享誉江南。" },
         { epochId: "E2", period: "丝贸暴富", event: "1843 上海开埠后生丝直出口伦敦里昂，南浔四象借洋行买办中介积聚亿万白银。" },
-        { epochId: "E3", period: "资本输革", event: "张静江以巴黎商贸为掩护重金资援孙中山革命；庞元济成实业兼大鉴藏家。" },
-        { epochId: "E4", period: "藏归国有", event: "刘氏嘉业堂及庞氏珍藏多捐献或归入国家图书馆/上博；张静江 1949 前移居纽约直至逝世。" }
+        { epochId: "E3", period: "通运与古董流", event: "张静江以巴黎通运资援革命；卢芹斋贩昭陵二骏入宾大，庞元济虚斋部分书画流向美国佛利尔。" },
+        { epochId: "E4", period: "藏归国有", event: "刘氏嘉业堂及庞元济虚斋大宗捐入上海博物馆/国家图书馆；张静江 1949 前移居纽约终老。" }
       ],
       branches1949: [
         { dest: "留大陆", desc: "刘氏嘉业堂、庞元济“虚斋”绝大部分古籍名画归藏上海/浙江博物馆体系。" },
-        { dest: "出海欧美", desc: "张静江抗战及 1949 前定居纽约并终老于此，后人多在欧美艺术与商学界。" }
+        { dest: "出海欧美", desc: "张静江终老纽约，卢芹斋古董网络留存欧美各大博物馆亚艺部，部分后人活跃海外商学界。" }
       ],
-      linkedArtifactIds: ["A01", "A11"],
-      sources: ["《南浔志》", "陈其美/孙中山致张静江函电档", "中国第二历史档案馆建设委员会档"],
+      linkedArtifactIds: ["A01", "A11", "A15"],
+      sources: ["《南浔志》", "美国宾夕法尼亚大学博物馆《昭陵二骏购藏档案》", "华盛顿佛利尔美术馆《虚斋旧藏》记录", "孙中山致张静江函电档"],
       debunkNote: ""
     },
     {
       id: "F26",
-      northToSouthOrder: 26,
+      northToSouthOrder: 27,
       regionId: "R4",
       name: "宁波帮与宋孔蒋陈“江浙财团”",
       surnameTags: ["严信厚", "虞洽卿", "包玉刚", "董浩云", "宋子文"],
@@ -921,13 +952,43 @@ const HISTORICAL_DATA = {
         { dest: "赴台湾", desc: "蒋宋联姻政治核心及相关官商赴台。" },
         { dest: "出海欧美", desc: "宋子文、宋美龄（晚年）、孔祥熙家族主体定居美国纽约等地。" }
       ],
-      linkedArtifactIds: ["A11"],
-      sources: ["《上海宁波同乡会与四明公所档案》", "斯坦福大学胡佛研究院《宋子文档案》", "《包玉刚传》"],
+      linkedArtifactIds: ["A11", "A15"],
+      sources: ["《上海宁波同乡会与四明公所档案》", "斯坦福大学胡佛研究院《宋子文档案》《孔祥熙档案》", "《包玉刚传》"],
+      debunkNote: ""
+    },
+    {
+      id: "F36",
+      northToSouthOrder: 28,
+      regionId: "R4",
+      name: "常熟翁氏（翁同龢—翁万戈莱溪居藏画脉）",
+      surnameTags: ["翁同龢", "翁万戈", "莱溪居", "长江万里图"],
+      location: "江苏常熟 · 上海 · 美国新罕布什尔 · 波士顿",
+      mapPos: { x: 540, y: 284 },
+      badge: "帝师世藏 · 2018中美双捐",
+      pillars: ["儒", "政权"],
+      categories: ["文教科研", "姻亲互保"],
+      darkMechanisms: ["1948家藏秘密运美护宝", "百岁跨太平洋双馆捐赠闭环"],
+      evidenceLevel: "档案确证",
+      summary: "同治光绪两代帝师翁同龢构建常熟翁氏六代书画善本库；五世孙翁万戈（1918—2020）1948—1949 年间将数百件宋元明清至宝打包运美秘护七十年；2018—2019 百岁之际分别向美国波士顿美术馆捐 183 件及《长江万里图》，同时向上海博物馆捐梁楷、沈周、王原祁名迹。",
+      openLine: "咸丰状元翁同龢任户部尚书、军机大臣与光绪帝师，支持戊戌新政遭慈禧罢黜；五世孙翁万戈为著名美籍华人收藏家、学者与社会活动家。",
+      darkLine: "1948 年冬避战乱，翁万戈借赴美求学与外交渠道将常熟翁氏六代顶级文物装箱秘密运抵美国新罕布什尔州“莱溪居”悉心守护；既拒绝碎片化高价套现拍卖，最终在 2018—2019 年以整宗无偿捐赠模式分别安放于中美两大公立博物馆，实现了私家重宝向人类公共遗产的完美跃迁。",
+      timeline: [
+        { epochId: "E1", period: "乾嘉起家", event: "常熟翁氏由儒学仕宦起家，翁心存（翁同龢父）入道光咸丰朝为体仁阁大学士。" },
+        { epochId: "E2", period: "帝师聚藏", event: "翁同龢历同光两朝军机大臣与帝师，重金搜集宋元名画善本，甲午戊戌后归隐常熟。" },
+        { epochId: "E3", period: "秘运护宝", event: "1938 翁万戈赴美，1948—1949 年将翁氏六代顶级书画拓片与古籍抢运至美妥善保管。" },
+        { epochId: "E4", period: "百岁双捐", event: "2018 百岁寿诞捐波士顿美术馆《长江万里图》及 183 件书画；2019 上博办“莱溪华宝”展受赠沈周王原祁。" }
+      ],
+      branches1949: [
+        { dest: "留大陆", desc: "常熟翁氏故居与部分家族文献留存江苏，2018—2019 重磅名迹回归上海博物馆。" },
+        { dest: "出海欧美", desc: "翁万戈定居美国守护家藏七十载，2018 年创波士顿美术馆史上最大中国书画捐赠纪录。" }
+      ],
+      linkedArtifactIds: ["A14"],
+      sources: ["《翁同龢日记》", "美国波士顿美术馆（MFA Boston）2018 翁氏捐赠档案", "上海博物馆《莱溪华宝》特展图录"],
       debunkNote: ""
     },
     {
       id: "F27",
-      northToSouthOrder: 27,
+      northToSouthOrder: 29,
       regionId: "R5",
       name: "云南弥勒王氏（王炽，“西南钱王”）",
       surnameTags: ["王炽", "王鸿图", "同庆丰", "天顺祥"],
@@ -957,7 +1018,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F28",
-      northToSouthOrder: 28,
+      northToSouthOrder: 30,
       regionId: "R5",
       name: "云南“西南王”脉络（唐继尧—龙云—卢汉）",
       surnameTags: ["唐继尧", "龙云", "卢汉", "纳垢家支"],
@@ -988,7 +1049,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F29",
-      northToSouthOrder: 29,
+      northToSouthOrder: 31,
       regionId: "R5",
       name: "四川大邑刘氏（刘湘/刘文辉/刘文彩）",
       surnameTags: ["刘湘", "刘文辉", "刘文彩", "袍哥网络"],
@@ -1018,7 +1079,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F30",
-      northToSouthOrder: 30,
+      northToSouthOrder: 32,
       regionId: "R5",
       name: "自贡井盐四大家族与合川卢作孚",
       surnameTags: ["王三畏堂", "李四友堂", "胡慎怡堂", "卢作孚", "卢国纪"],
@@ -1048,7 +1109,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F31",
-      northToSouthOrder: 31,
+      northToSouthOrder: 33,
       regionId: "R6",
       name: "广州十三行四大首富（伍/潘/卢/叶）",
       surnameTags: ["伍秉鉴（浩官）", "潘振承", "卢观恒", "叶上林"],
@@ -1079,7 +1140,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F32",
-      northToSouthOrder: 32,
+      northToSouthOrder: 34,
       regionId: "R6",
       name: "香山买办与四大百货世家（唐/徐/郑/郭/马）",
       surnameTags: ["唐廷枢", "徐润", "郑观应", "郭乐/郭泉", "马应彪"],
@@ -1110,7 +1171,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F33",
-      northToSouthOrder: 33,
+      northToSouthOrder: 35,
       regionId: "R6",
       name: "粤港澳跨国豪门与冷战破封锁暗线",
       surnameTags: ["何东", "何鸿燊", "陈嘉庚", "庄世平", "霍英东", "何贤"],
@@ -1141,7 +1202,7 @@ const HISTORICAL_DATA = {
     },
     {
       id: "F34",
-      northToSouthOrder: 34,
+      northToSouthOrder: 36,
       regionId: "R6",
       name: "闽台望族与广西桂系（林/辜/王/李白）",
       surnameTags: ["雾峰林家", "板桥林家", "鹿港辜家", "王永庆", "李宗仁", "白崇禧"],
@@ -1315,6 +1376,42 @@ const HISTORICAL_DATA = {
       linkedEvents: "1938 宜昌大撤退；1949 云南/四川起义与港澳破禁运海上贸易",
       evidenceLevel: "档案确证",
       significance: "最直观地还原战争与冷战封锁年代，西南与港澳企业家如何在钢丝上维系国家补给命脉。"
+    },
+    {
+      id: "A13",
+      name: "端方旧藏西周“柉禁十三器”（大都会艺术博物馆）",
+      category: "信物",
+      era: "西周出土 1901 · 1924 售入纽约",
+      location: "陕西宝鸡 · 北京 · 美国纽约大都会艺术博物馆",
+      description: "晚清金石名臣端方 1901 年收于陕西宝鸡斗鸡台的西周青铜礼器组合；1911 端方被杀家道中落后，1924 年由福开森斡旋售予美国纽约大都会艺术博物馆亚洲部镇馆陈列至今。",
+      linkedFamilyIds: ["F35", "F05"],
+      linkedEvents: "1911 辛亥清室亲贵资产流散与近代西方汉学家经纪国宝出洋",
+      evidenceLevel: "档案确证",
+      significance: "见证了辛亥鼎革之后晚清顶级旗人金石家藏品如何通过外交经纪网络流入欧美国家殿堂。"
+    },
+    {
+      id: "A14",
+      name: "常熟翁氏“莱溪居”藏画与《长江万里图》",
+      category: "典籍建筑",
+      era: "同光帝师聚藏 · 2018—2019 双馆捐赠",
+      location: "江苏常熟 · 美国波士顿美术馆 · 上海博物馆",
+      description: "翁同龢五世孙翁万戈于 1948—1949 年运美秘护的六代家藏精华；2018 百岁向波士顿美术馆捐赠 16 米王翚《长江万里图》及 183 件书画拓片，2018—2019 同时向上海博物馆捐出沈周、王原祁名作。",
+      linkedFamilyIds: ["F36", "F21"],
+      linkedEvents: "1948 世家珍藏秘运护宝；2018—2019 跨太平洋中美公立博物馆双向无偿捐赠",
+      evidenceLevel: "档案确证",
+      significance: "破除了私家珍宝必遭拍卖拆散的宿命，成为华人世家文化资产回归世界公共遗产的典范。"
+    },
+    {
+      id: "A15",
+      name: "虚斋/通运文物（宾大昭陵二骏）与大维德瓷器（大英95室）",
+      category: "信物",
+      era: "1914—1949",
+      location: "湖州南浔 · 北京 · 华盛顿佛利尔 · 费城宾大 · 伦敦大英 · 台北",
+      description: "涵盖南浔张静江巴黎通运与卢芹斋（1914 昭陵二骏入宾大、虚斋部分名画入佛利尔）、大维德爵士购自没落清室的 1,700 件御瓷（大英博物馆 95 室），以及 1933 年故宫近两万箱文物南迁护宝体系。",
+      linkedFamilyIds: ["F25", "F35", "F07", "F26"],
+      linkedEvents: "巴黎通运古董贸易、昭陵二骏外流、大维德抢购清宫瓷与 1933 故宫南迁",
+      evidenceLevel: "档案确证",
+      significance: "完整呈现民国时期中国文物在“海外古董商业贩运”与“国家及士绅拼死护宝南迁”之间的双轨博弈。"
     }
   ],
 
@@ -1437,6 +1534,34 @@ const HISTORICAL_DATA = {
         { source: "m_shanghai", target: "m_red", type: "medical_intel", label: "沪上名医及爱国西医借诊所掩护地下抗日供药" },
         { source: "m_huqing", target: "m_red", type: "medical_intel", label: "水路与药号密包装接应新四军苏北浙东军需医药" }
       ]
+    },
+    antiquities: {
+      id: "antiquities",
+      title: "网络五 · 跨国文物古董流动、海外密档与当代政商学延伸网",
+      description: "从国外博物馆与档案馆反向观照中国家族：端方柉禁入纽约大都会、翁万戈捐波士顿与上博、张静江通运与卢芹斋销昭陵二骏、庞元济虚斋、大维德藏瓷入大英 95 室、1933 故宫南迁及胡佛/洛克菲勒/FO 371/JACAR 密档。",
+      nodes: [
+        { id: "q_duanfang", label: "端方柉禁→纽约大都会(1924)", x: 135, y: 110, pillar: "政权", familyId: "F35", artifactId: "A13", role: "晚清旗人金石藏家", event: "1911 端方遇害后经福开森售入大都会", objectTag: "西周柉禁十三器" },
+        { id: "q_weng", label: "翁万戈→波士顿美术馆/上博", x: 375, y: 110, pillar: "儒", familyId: "F36", artifactId: "A14", role: "帝师世藏百岁闭环", event: "1948 运美秘护，2018—19 双馆无偿捐赠", objectTag: "《长江万里图》与183件书画" },
+        { id: "q_zhang", label: "张静江巴黎通运→卢芹斋", x: 615, y: 110, pillar: "商金融", familyId: "F25", artifactId: "A15", role: "丝商革命金库与古董网", event: "1902 设通运公司茶丝古董资助革命党", objectTag: "巴黎通运公司账册" },
+        { id: "q_upenn", label: "昭陵二骏→宾大/佛利尔", x: 830, y: 110, pillar: "政权", familyId: "F25", artifactId: "A15", role: "海外博物馆中国部基座", event: "1914 卢芹斋售二骏入宾大，虚斋画入佛利尔", objectTag: "飒露紫·拳毛騧石刻" },
+        { id: "q_pang", label: "南浔庞元济“虚斋”→上博", x: 150, y: 280, pillar: "儒", familyId: "F25", artifactId: "A15", role: "近代书画鉴藏第一人", event: "藏品分归上海博物馆、故宫与海外博物馆", objectTag: "《虚斋名画录》" },
+        { id: "q_david", label: "大维德爵士→大英95室", x: 420, y: 280, pillar: "政权", familyId: "F35", artifactId: "A15", role: "英伦御瓷专藏体系", event: "购没落清室银行抵押1,700件宋元明清瓷", objectTag: "大维德元青花瓶" },
+        { id: "q_palace", label: "1933 故宫南迁→台北/北京", x: 695, y: 280, pillar: "政权", familyId: "F07", artifactId: "A15", role: "国家文物战时生死西迁", event: "近两万箱国宝历十六年形成两岸三院分藏", objectTag: "故宫南迁箱件清单" },
+        { id: "q_rock", label: "洛克菲勒档→协和医学院", x: 165, y: 450, pillar: "医", familyId: "F10", artifactId: "A08", role: "美资基金会育现代医学", event: "1921 购豫王府建协和，培育曾宪九等泰斗", objectTag: "纽约洛克菲勒中心CMB档" },
+        { id: "q_hoover", label: "斯坦福胡佛(宋子文/孔祥熙)", x: 475, y: 450, pillar: "商金融", familyId: "F26", artifactId: "A11", role: "美藏民国最高财政档案", event: "2006/2010 开放宋孔微缩胶卷改写民国史", objectTag: "胡佛研究院宋孔文书" },
+        { id: "q_fo_jacar", label: "英国FO 371与日本JACAR档", x: 785, y: 450, pillar: "政权", familyId: "F17", artifactId: "A01", role: "英日官方第三方视角", event: "密录盛宣怀汉冶萍日债、王一亭与张作霖", objectTag: "Kew外交密电与外务省记录" }
+      ],
+      edges: [
+        { source: "q_duanfang", target: "q_david", type: "capital", label: "辛亥后清室及旗人藏品流出北京银号与古玩市场" },
+        { source: "q_zhang", target: "q_upenn", type: "capital", label: "卢芹斋自通运起家将昭陵二骏等销往宾大与佛利尔" },
+        { source: "q_pang", target: "q_zhang", type: "kinship", label: "庞元济与外甥张静江同出湖州南浔，书画经通运外流" },
+        { source: "q_pang", target: "q_weng", type: "doctrine", label: "江南/常熟两大私家藏画绝顶最终皆大宗归入上博等公藏" },
+        { source: "q_david", target: "q_palace", type: "doctrine", label: "1930s 清宫旧瓷流散英伦与故宫南迁抢救形成鲜明双轨" },
+        { source: "q_palace", target: "q_weng", type: "doctrine", label: "1948—49 台北故宫迁运与翁万戈私家运美护宝同期发生" },
+        { source: "q_rock", target: "q_hoover", type: "capital", label: "美国慈善基金与宋孔美援财政金融体系在华并轨" },
+        { source: "q_hoover", target: "q_fo_jacar", type: "kinship", label: "美英日三方档案馆交织还原民国政商真实底账" },
+        { source: "q_fo_jacar", target: "q_zhang", type: "capital", label: "JACAR 保留日清汽船(王一亭)与江南华商涉日往来" }
+      ]
     }
   },
 
@@ -1505,6 +1630,19 @@ const HISTORICAL_DATA = {
         { heading: "佛教接力：石埭→宜黄→永修云居山", text: "曾国藩幕府孵化的杨文会于 1866 创金陵刻经处；江西宜黄欧阳竟无创办支那内学院复兴唯识学；1953 年虚云禅师以 114 岁入驻永修云居山真如禅寺重振农禅，并与云南龙云、沪商王一亭保持深厚护法关系。" },
         { heading: "儒学软着陆与当代丹儒密使", text: "江西修水义宁陈氏自湖南维新巡抚退而成为陈三立、陈寅恪文史最高峰；九江庐山同时交错白鹿洞、东林寺、1895 牯岭欧美租界与民国夏都；战后南怀瑾继承融通脉络搭建起香港密谈与金温铁路通道。" }
       ]
+    },
+    {
+      id: "T06",
+      title: "专题六 · 跨国文物古董流动、海外密档与当代政商学延伸网",
+      subtitle: "跳出本土视角：纽约大都会、波士顿、宾大、大英 95 室及 FO 371 / JACAR / 胡佛 / 洛克菲勒档案里的中国家族",
+      docPath: "docs/topic-6-antiquities-global-archives.md",
+      evidenceLevel: "档案确证",
+      keyThesis: "清末至 1949 的家族财富不仅化为租界地产与离岸存款，更伴随青铜、书画、官窑瓷器的跨洋迁徙；结合英日美三方国家与大学档案馆藏，能还原出延伸至 21 世纪公共博物馆、现代医学与跨国产业的完整链条。",
+      sections: [
+        { heading: "文物与古董跨海五大铁案", text: "1924 端方西周“柉禁十三器”经福开森售入纽约大都会；湖州张静江通运与卢芹斋 1914 将昭陵二骏销往宾大博物馆；庞元济“虚斋”分归佛利尔与上博；大维德 1,700 件御瓷入大英 95 室；2018—19 翁万戈百岁向波士顿美术馆及上博无偿双捐六代家藏。" },
+        { heading: "英日美四座海外解密密档库", text: "英国国家档案馆 FO 371 密录汉冶萍与张作霖；日本 JACAR 保留盛宣怀借款合同与日清买办原档；斯坦福胡佛研究院开放《宋子文》《孔祥熙》档案；纽约洛克菲勒档案中心记录 1921 建协和医学院与燕京大学资助网。" },
+        { heading: "延伸至当代的政商学闭环", text: "协和体系育出曾宪九等现代医宗，钱氏跨海成“三钱＋诺奖”，荣氏中信与包玉刚/王宽诚/霍英东回流奠基改革开放窗口，而翁万戈与盛氏等私家“重宝重档”最终全部汇入中外公立博物馆与图书馆。" }
+      ]
     }
   ],
 
@@ -1518,7 +1656,11 @@ const HISTORICAL_DATA = {
     { id: "AR07", name: "全国及省市级政协《文史资料选辑》", location: "全国各省市", scope: "1960s—1990s 亲历者与旧僚属回忆录汇编", targetFamilies: "云南起义、四川袍哥、孟河/京城四大名医、同仁堂公私合营", accessNote: "发掘非正史民间暗线（如输药通道、起义密电）的宝库。" },
     { id: "AR08", name: "台湾中研院近史所口述历史 & 台北觉修宫/孔府档", location: "中国台北 · 台中", scope: "1949 赴台官绅、雾峰/板桥林家契约及三统渡台记录", targetFamilies: "孔德成、张恩溥玉印传承、白崇禧、辜振甫、钱穆", accessNote: "两岸分流史研究不可或缺的对岸一手史料对照端。" },
     { id: "AR09", name: "上海图书馆中国家谱知识服务平台", location: "中国上海（线上可检）", scope: "全球最大公开中文家谱数字化检索平台", targetFamilies: "吴越钱氏、武进盛氏、静升王氏、义宁陈氏、徽州胡氏等", accessNote: "核对字辈、支派迁徙、义庄规约与姻亲通婚的谱牒基座。" },
-    { id: "AR10", name: "宗教祖庭与医药专史档案（金陵/龙虎山/云居山/樟树）", location: "南京 · 江西 · 杭州", scope: "金陵刻经处经版录、《云居山新志》、《龙虎山志》、《樟树药志》", targetFamilies: "杨文会、欧阳竟无、虚云禅师、张恩溥、孟河/胡庆余堂/樟帮", accessNote: "还原佛道医三大超政权脉络“物—人—事”传承的真实凭据。" }
+    { id: "AR10", name: "宗教祖庭与医药专史档案（金陵/龙虎山/云居山/樟树）", location: "南京 · 江西 · 杭州", scope: "金陵刻经处经版录、《云居山新志》、《龙虎山志》、《樟树药志》", targetFamilies: "杨文会、欧阳竟无、虚云禅师、张恩溥、孟河/胡庆余堂/樟帮", accessNote: "还原佛道医三大超政权脉络“物—人—事”传承的真实凭据。" },
+    { id: "AR11", name: "英国国家档案馆 FO 371 外交部对华全宗", location: "英国伦敦（Kew）", scope: "驻华公使与汉口、奉天、上海总领事发回伦敦的绝密电报与年报", targetFamilies: "盛宣怀汉冶萍日债、张作霖东北外交、何东家族与英资洋行", accessNote: "提供老牌帝国视角下的列强在华博弈与东北/华中实时情报。" },
+    { id: "AR12", name: "日本亚洲历史资料中心（JACAR）战前档案", location: "日本东京（线上数字化可查）", scope: "外务省外交史料馆、兴业银行、横滨正金银行涉华借款与日清汽船档", targetFamilies: "盛宣怀汉冶萍、王一亭日清买办、奉天张作霖与满铁博弈", accessNote: "中日双方原档对照，揭示民国财商借款契约与日方顾问密报。" },
+    { id: "AR13", name: "斯坦福大学胡佛研究院中国近现代档案", location: "美国加州斯坦福", scope: "2006 公开《宋子文档案》、2010 开放《孔祥熙档案》及两蒋日记", targetFamilies: "宋子文、孔祥熙、蒋介石、陈立夫及战时美援与四行二局财金网", accessNote: "改写民国高层财政清廉度与战时外交评估的海外第一手库藏。" },
+    { id: "AR14", name: "纽约洛克菲勒档案中心 & 美英博物馆亚洲部藏档", location: "纽约 · 波士顿 · 费城 · 伦敦", scope: "CMB 协和医学院档案 + 大都会(端方柉禁)/波士顿(翁氏)/宾大(二骏)/大英95室(大维德)", targetFamilies: "协和医学院(曾宪九等)、端方、常熟翁万戈、庞元济虚斋、卢芹斋", accessNote: "追踪美国公益资本入华育才与百年文物跨洋流转的最权威国外档案。" }
   ],
 
   debunks: [

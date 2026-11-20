@@ -27,6 +27,7 @@ const requiredFiles = [
   "docs/topic-3-1949-four-branches.md",
   "docs/topic-4-offshore-capital.md",
   "docs/topic-5-jiangxi-and-four-pillars.md",
+  "docs/topic-6-antiquities-global-archives.md",
   "scripts/serve.mjs"
 ];
 
@@ -101,7 +102,7 @@ if (D) {
   });
 
   // Artifacts + Bidirectional consistency
-  assert(Array.isArray(D.artifacts) && D.artifacts.length === 12, `artifacts 数量应为 12，当前为 ${D.artifacts?.length}`);
+  assert(Array.isArray(D.artifacts) && D.artifacts.length === 15, `artifacts 数量应为 15，当前为 ${D.artifacts?.length}`);
   const artMap = {};
   (D.artifacts || []).forEach((a) => {
     artMap[a.id] = a;
@@ -130,7 +131,7 @@ if (D) {
   }
 
   // Networks + Edge validation + Collision avoidance (> 45px)
-  const requiredNets = ["four_pillars", "kinship", "capital", "medicine"];
+  const requiredNets = ["four_pillars", "kinship", "capital", "medicine", "antiquities"];
   for (const nid of requiredNets) {
     const net = D.networks?.[nid];
     assert(Boolean(net), `networks 缺少子图 ${nid}`);
@@ -156,11 +157,11 @@ if (D) {
   }
 
   // Special topics, Archives, Debunks
-  assert(Array.isArray(D.specialTopics) && D.specialTopics.length === 5, "specialTopics 应为 5 个专题");
+  assert(Array.isArray(D.specialTopics) && D.specialTopics.length === 6, "specialTopics 应为 6 个专题");
   for (const t of D.specialTopics || []) {
     assert(fs.existsSync(path.join(ROOT, t.docPath)), `专题 ${t.id} 对应文件不存在: ${t.docPath}`);
   }
-  assert(Array.isArray(D.archives) && D.archives.length === 10, "archives 应为 10 条");
+  assert(Array.isArray(D.archives) && D.archives.length === 14, "archives 应为 14 条");
   assert(Array.isArray(D.debunks) && D.debunks.length === 7, "debunks 应为 7 条");
 }
 
