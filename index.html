@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乾隆以降中国顶级家族与佛道儒政权明暗双线考据图谱（1736—今）</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="title-block">
+        <div class="seal-row">
+          <span class="seal-stamp">明暗双线考据</span>
+          <span class="meta-pill">1736（乾隆元年）— 至今</span>
+          <span class="meta-pill">北 → 南空间主轴</span>
+          <span class="meta-pill status-pill">DRAFT · P0 公开考据</span>
+        </div>
+        <h1>乾隆以降中国顶级家族与佛道儒政权明暗双线考据图谱</h1>
+        <p class="subtitle">从清末欧美资本接触到 1949 四向分流 —— 家族血缘 × 佛道儒政权 × 器物信物（人·事·物）三维实证检索门户</p>
+      </div>
+      <div class="header-actions">
+        <div class="stat-strip" id="statStrip"></div>
+        <button id="themeToggle" class="theme-btn" type="button" aria-label="切换宣纸/墨玉夜间模式">
+          <span class="theme-icon" id="themeIcon">☾</span>
+          <span id="themeLabel">墨玉夜间</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="legend-bar">
+      <span class="legend-item"><i class="dot dot-open"></i><strong>【明线】</strong>公开世系、官爵字号与正史建制</span>
+      <span class="legend-item"><i class="dot dot-dark"></i><strong>【暗线】</strong>租界信托、密押清算、离岸资本、医道护法与多岸避险</span>
+      <span class="legend-item"><i class="dot dot-gold"></i><strong>【物】</strong>玉印、经版、密押、匾额与账册实证锚点</span>
+      <span class="legend-item"><i class="dot dot-purple"></i><strong>【三层标尺】</strong>档案确证 / 谱牒口述 / 民间辨伪</span>
+    </div>
+
+    <nav class="main-nav" role="tablist" aria-label="考据图谱核心视图">
+      <button class="nav-tab active" data-view="map" type="button">1. 舆图谱系（北→南）</button>
+      <button class="nav-tab" data-view="timeline" type="button">2. 乾隆编年（1736—今）</button>
+      <button class="nav-tab" data-view="network" type="button">3. 时空交织网（人·事·物）</button>
+      <button class="nav-tab" data-view="artifacts" type="button">4. 器物信物与五大专题</button>
+      <button class="nav-tab" data-view="archives" type="button">5. 一手档案与辨伪台</button>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <!-- 视图 1：舆图谱系（北→南空间主轴） -->
+    <section id="view-map" class="view-panel active">
+      <div class="filter-toolbar">
+        <div class="search-row">
+          <div class="search-box-wrap">
+            <input id="searchInput" type="search" placeholder="检索姓氏、人物、商号、地名或关键词（如：江西、王氏、张恩溥、盛宣怀、名医、十三行）…" autocomplete="off">
+            <button id="clearFiltersBtn" class="btn-ghost" type="button">重置筛选</button>
+          </div>
+          <div class="hot-chips" id="hotChips"></div>
+        </div>
+        <div class="select-row">
+          <label>空间板块（北→南）：
+            <select id="regionSelect"></select>
+          </label>
+          <label>制度/精神脉络：
+            <select id="pillarSelect">
+              <option value="ALL">全部脉络（政权/儒/佛/道/商/医）</option>
+              <option value="政权">政权与军政</option>
+              <option value="儒">儒家与文教</option>
+              <option value="佛">佛教法脉与居士林</option>
+              <option value="道">道教祖庭与万寿宫</option>
+              <option value="商金融">商帮、票号与离岸金融</option>
+              <option value="医">名医世家与国药供应链</option>
+            </select>
+          </label>
+          <label>证据级别：
+            <select id="evidenceSelect">
+              <option value="ALL">全部证据层级</option>
+              <option value="档案确证">档案确证</option>
+              <option value="谱牒口述">谱牒/口述线索</option>
+            </select>
+          </label>
+          <span class="result-counter" id="resultCounter"></span>
+        </div>
+      </div>
+
+      <div class="map-split-layout">
+        <aside class="map-column">
+          <div class="card map-card">
+            <div class="card-head-row">
+              <h2>从北到南明暗双线舆图</h2>
+              <span class="hint-text">点击板块或编号标记联动检索</span>
+            </div>
+            <div class="svg-map-wrap" id="geoMapWrap">
+              <svg id="geoMapSvg" viewBox="0 0 680 620" role="img" aria-label="从北到南家族分布交互舆图"></svg>
+              <div id="mapTooltip" class="map-tooltip hidden"></div>
+            </div>
+            <div class="map-caption">
+              <span>虚线弧示意 19 世纪至 1949 年代“上海/广州 → 港澳 · 台湾 · 日美欧”跨海暗线流向</span>
+            </div>
+          </div>
+        </aside>
+
+        <div class="list-column" id="familyListContainer"></div>
+      </div>
+    </section>
+
+    <!-- 视图 2：乾隆编年（1736—今时间主轴） -->
+    <section id="view-timeline" class="view-panel">
+      <div class="epoch-tabs" id="epochTabs"></div>
+      <div class="epoch-banner card" id="epochBanner"></div>
+      <div class="epoch-filter-note">以下严格按<strong>由北向南（东北 → 华北 → 江淮与江西 → 长三角 → 西南 → 闽粤港澳台）</strong>展示同一历史截面下各家族与精神法脉的同步演进：</div>
+      <div class="timeline-matrix" id="timelineMatrix"></div>
+    </section>
+
+    <!-- 视图 3：时空交织网（人—事—物关系拓扑） -->
+    <section id="view-network" class="view-panel">
+      <div class="network-controls card">
+        <div class="network-subtabs" id="networkSubtabs"></div>
+        <div class="edge-legend-row" id="edgeLegendRow"></div>
+      </div>
+      <div class="network-split">
+        <div class="card network-canvas-card">
+          <div class="card-head-row">
+            <h2 id="networkTitle"></h2>
+            <span class="hint-text">点击或悬停任意节点查看“人—事—物”交织详情</span>
+          </div>
+          <p class="network-desc" id="networkDesc"></p>
+          <div class="network-svg-wrap">
+            <svg id="networkSvg" viewBox="0 0 960 560" role="img" aria-label="家族与佛道儒政权关系拓扑网"></svg>
+          </div>
+        </div>
+        <aside class="card network-inspector" id="networkInspector"></aside>
+      </div>
+    </section>
+
+    <!-- 视图 4：器物信物与五大专题考 -->
+    <section id="view-artifacts" class="view-panel">
+      <div class="section-header-bar">
+        <div>
+          <h2>关键器物、信物与机构锚点（“物”之实证）</h2>
+          <p class="section-sub">以传世玉印、木刻经版、票号密押本、药帮铜刀与洋行账册为实体线索，打通跨家族时空脉络</p>
+        </div>
+        <div class="artifact-cat-filters" id="artifactCatFilters"></div>
+      </div>
+      <div class="artifacts-grid" id="artifactsGrid"></div>
+
+      <div class="topics-section">
+        <div class="section-header-bar">
+          <div>
+            <h2>五大纵深考据专题研读</h2>
+            <p class="section-sub">与项目 <code>docs/topic-*.md</code> 档案库全文一一对应，聚焦跨家族隐秘结构</p>
+          </div>
+        </div>
+        <div class="topic-tabs" id="topicTabs"></div>
+        <div class="card topic-reader" id="topicReader"></div>
+      </div>
+    </section>
+
+    <!-- 视图 5：一手档案与辨伪台 -->
+    <section id="view-archives" class="view-panel">
+      <div class="section-header-bar">
+        <div>
+          <h2>十大一手档案文献检索基座</h2>
+          <p class="section-sub">跳过网络二次演绎，直接锚定国内外公立档案馆、大学口述库与家谱原件</p>
+        </div>
+      </div>
+      <div class="archives-grid" id="archivesGrid"></div>
+
+      <div class="debunks-section">
+        <div class="section-header-bar">
+          <div>
+            <h2>【民间传闻 vs 档案辨伪】七大高频迷思对照台</h2>
+            <p class="section-sub">坚持“实践唯实”与“三层证据分级”，保留传说线索同时明确档案实证边界</p>
+          </div>
+        </div>
+        <div class="debunks-grid" id="debunksGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>乾隆以降中国顶级家族与佛道儒政权明暗双线考据图谱 · 纯离线静态系统（Zero CDN）</span>
+    <span>状态：Draft（P0 公开历史文献研究） · 建议本地通过 <code>node scripts/serve.mjs</code> 预览</span>
+  </footer>
+
+  <!-- 家族深度考据侧滑抽屉 -->
+  <div id="drawerOverlay" class="drawer-overlay hidden"></div>
+  <aside id="detailDrawer" class="detail-drawer hidden" aria-hidden="true" role="dialog" aria-label="家族深度考据档案">
+    <div class="drawer-header">
+      <div id="drawerHeaderMeta"></div>
+      <div class="drawer-controls">
+        <div class="perspective-toggle" id="perspectiveToggle">
+          <button type="button" data-mode="both" class="active">明暗对照</button>
+          <button type="button" data-mode="dark">仅看暗线</button>
+          <button type="button" data-mode="open">仅看明线</button>
+        </div>
+        <button id="closeDrawerBtn" class="close-drawer-btn" type="button" aria-label="关闭抽屉">✕</button>
+      </div>
+    </div>
+    <div id="drawerBody" class="drawer-body"></div>
+  </aside>
+
+  <script src="data/families.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
